@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--
+    Name: Xiaoqi Long
+    CS 101 
+    June 5, 2021
+
+    This is the index.html website for the second-hand book website. This page
+    implements the main page (all products view), the single-product view, 
+    and the cart view.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Café Society</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="utils.js"></script>
+        <script defer src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>
+                    Café Society
+                </h1>
+                <h2>
+                    Le vent se lève. . . il faut tenter de vivre
+                </h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="sell.html">Sell My Books</a></li>
+                    <li id="cart-btn">Cart</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="all-view">
+                <section id="bar">
+                    <aside id="filter">
+                        <div class="filter-choice">
+                            <input type="radio" name="genres" value="all" checked="yes" />
+                            <label>All</label>
+                        </div>
+                    </aside>
+                    <section id="popular">
+                        <img src="data/banner.png" alt="The store owner's favorite book"/>
+                    </section>
+                </section>
+                <section id="products">
+    
+                </section>
+            </section>
+            
+            <section id="single-view" class="hidden">
+                <div>
+
+                </div>
+                <section>
+                    <button id="add-cart">Add to Cart</button>
+                    <button class="back">Back to main page</button>
+                </section>
+            </section>
+
+            <section id="cart-view" class="hidden">
+                <section>
+                    <section id="cart">
+        
+                    </section>
+                    <section id="order">
+                        <h4>Order Summary</h4>
+                        <span>Total Price: $</span><span id="price-total">0</span>
+                        <br>
+                    </section>
+                </section>
+                <button class="back">Back to main page</button>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Banner image created by Xiaoqi Long with <a href="https://procreate.art/">Procreate painting tool</a>.
+            </p>
+            <p>
+                Inspiration of Xue Baochai (薛宝钗)'s character design came from <a href="https://en.wikipedia.org/wiki/Dream_of_the_Red_Chamber_(1987_TV_series)">the 1987 TV adaptation of Dream of the Red Chamber</a>. 
+            </p>
+            <p>
+                Book covers made from <a href="https://edit.org/edit/all/w1xs0"> this template</a> and <a href="https://edit.org/edit/all/1hbm6w">this template</a> from <a href="https://edit.org">edit.org</a>
+            </p>
+            <p>Default book icon made by <a href="https://www.flaticon.com/authors/srip" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+        </footer>
+    </body>
+
+</html>

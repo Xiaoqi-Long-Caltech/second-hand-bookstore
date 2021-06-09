@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    Name: Xiaoqi Long
+    CS 101 
+    June 5, 2021
+
+    This is the sell.html website for the second-hand book website. This page
+    implements the page that lets the users add their own books to sell.
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Café Society : Sell my own books</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="sell_styles.css">
+        <script src="utils.js"></script>
+        <script defer src="sell.js"></script>
+    </head>
+    <body>
+        <header>
+            <section>
+                <h1>
+                    Café Society
+                </h1>
+                <h2>
+                    Le vent se lève. . . il faut tenter de vivre
+                </h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Products</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h3>Sell My Book</h3>
+            <form id="sell-info">
+                <div>
+                    <label for="title-input">Book Title: </label>
+                    <input name="title" type="text" required/>
+                </div>
+                <div>
+                    <label for="author-input">Author: </label>
+                    <input name="author" type="text" required/>
+                </div>
+                <div>
+                    <label for="genre-input">Genre: </label>
+                    <input name="genre" type="text" required/>
+                </div>
+                <div>
+                    <label for="price-input">My Price: </label>
+                    <input name="price" type="number" required/>
+                </div>
+                <div>
+                    <label for="condition-input">Rate Condition (Oldest left; Newest right): </label>
+                    <input name="condition" type="range" min="1" max="10" step="1" required/>
+                </div>
+                <div>
+                    <label for="publisher-input">Publisher: </label>
+                    <input name="publisher" type="text" required/>
+                </div>
+                <div>
+                    <label for="description-input">Description: </label>
+                    <textarea name="description" required></textarea>
+                </div>
+                <button id="submit-btn">Submit</button>
+            </form>
+            <div id="message">
+            </div>
+        </main>
+    </body>
+
+</html>

@@ -1,0 +1,38 @@
+/*
+  Name: Xiaoqi Long
+  This is the sell_styles.css page for the "Sell My Books" page of the 
+  second-hand book website.
+*/
+
+h3, form {
+  text-align: center;
+}
+
+h3 {
+  font-size: 25pt;
+  font-family: 'Fredericka the Great', cursive;
+}
+
+form {
+  width: 400px;
+  margin: auto;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 10px;
+}
+
+button {
+  margin-top: 15px;
+}
+
+#message {
+  text-align: center;
+}
+
+

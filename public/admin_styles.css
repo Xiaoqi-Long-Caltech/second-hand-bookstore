@@ -1,0 +1,21 @@
+/*
+  Name: Xiaoqi Long
+  This is the admin_styles.css page for the "admin" page of the 
+  second-hand book website.
+*/
+
+main, main > article > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  margin: 0px 20px;
+  flex-wrap: wrap;
+}
+
+main > article {
+  padding: 20px;
+  border: solid;
+  border-radius: 25px;
+}
